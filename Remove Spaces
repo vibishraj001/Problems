@@ -30,7 +30,7 @@ class Solution
    
     String modify(String S)
     {
-        S =S.replaceAll("","");
+        S =S.replaceAll(" ","");
         return S ;
     }
 }
