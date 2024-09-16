@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 1em;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1em;
+        }
+
+        .product h3 {
+            margin: 0;
+        }
+
+        .product p {
+            color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Shopping</h1>
+    </header>
+
+    <section>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <div class="product-info">
+                <h3>Product 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div class="product-info">
+                <h3>Product 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more product entries as needed -->
+
+    </section>
+
+    <footer>
+        &copy; 2023 Online Shopping
+    </footer>
+
+</body>
+</html>
