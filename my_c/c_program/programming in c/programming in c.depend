@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1686322725 source:f:\learn c language\programming in c\c language.c
+	<stdio.h>
+
+1686324439 source:f:\learn c language\programming in c\main.c
+	<stdio.h>
+
