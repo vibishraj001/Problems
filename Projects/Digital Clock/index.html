@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <style>
+    body{
+      background-color: black;
+
+    }
+    .Clock{
+      position:absolute;
+      background-color: transparent;
+      color: rgb(30, 4, 197);
+      top:50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 100px;
+      font-family: 'Orbitron';
+      letter-spacing: 9px;
+      border-radius: 20px;
+      
+      border: 4px solid rgb(153, 5, 5);
+    box-shadow: 2px 8px 30px rgb(215, 26, 26);
+    }
+  </style>
+
+</head>
+<body>
+  <h1>hello</h1>
+  <div id="DigitalClock" class="Clock"></div>
+  <script type="text/javascript">
+    function showTime()
+    {
+             var data = new Date();
+  var h =data.getHours();
+  var m = data.getMinutes();
+  var s = data.getSeconds();
+  var  session ="AM";
+ if (h==0){
+  h=12;
+ }
+ if(h>12){
+  h=h-12;
+  session = "PM";
+ }
+ //if(h<10){
+   //h = "0"+m;
+
+ //}
+ //if(m<10){
+  //m="0";
+
+ //}
+ //if(s<10){
+  //s="0"+s;
+
+ //}
+
+h= (h<10)?"0"+h:h;
+m= (m<10)?"0"+m:m;
+s= (s<10)?"0"+s:s;
+
+
+
+  document.getElementById("DigitalClock").innerHTML =h +":"+m+":"+s + " "+session;
+  setTimeout(showTime,1000);
+}
+    showTime();
+</script>
+</body>
+</html>
